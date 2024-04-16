@@ -1,0 +1,162 @@
+:root {
+    --col-de-nav: #d60000;
+    --col-de-link: #000;
+    --col-de-btn: #830d3a;
+    --col-de-btn-hover: #9c2a43c7;
+    --col-de-fondo: #000;
+}
+
+body {
+    background-color: var(--col-de-fondo);
+}
+
+
+.bg-body-tertiary {
+    background-color: var(--col-de-nav) !important;
+}
+
+/* Menu */
+
+.navbar-brand,
+.nav-link,
+.navbar-nav,
+.nav-link.active {
+    color: #fff !important;
+}
+
+.btn-outline-success {
+    background-color: var(--col-de-btn);
+    color: #fff;
+    border: 1px solid var(--col-de-btn);
+    white-space: nowrap;
+}
+
+.btn-outline-success:hover {
+    background-color: var(--col-de-btn-hover) !important;
+    border: 1px solid var(--col-de-btn-hover);
+}
+
+.m-auto {
+    margin: 0 auto;
+}
+
+.dropdown-menu {
+    background-color: var(--col-de-nav);
+    border: none;
+}
+
+
+.dropdown-item {
+    color: #fff;
+}
+
+.dropdown-item:hover {
+    background-color: var(--col-de-btn-hover);
+    color: #fff;
+}
+
+
+.navbar-toggler {
+    background-color: var(--col-de-btn);
+    padding: 10px;
+    border-radius: 100px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("imagenes/menu.png");
+
+}
+
+
+.navbar-toggler:focus {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+}
+
+.bi-bookmark-fill {
+    color: #fff;
+    cursor: pointer;
+}
+
+.bi-bookmark-fill:hover {
+    color: var(--col-de-btn-hover);
+
+}
+
+
+/* Home */
+.container-home {
+    min-height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("imagenes/fondo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.container-home_text {
+    width: 70%;
+}
+
+.home-title {
+    font-size: 1.2rem;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Yeseva One", serif;
+
+}
+
+.home-subtitle {
+    font-size: .9rem;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Estrenos */
+.carousel-inner img {
+    opacity: 0.7;
+}
+
+.title {
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+
+    /* Home */
+    .container-home {
+        min-height: calc(100vh - 60px);
+        padding: 40px 0;
+    }
+
+    .container-home_text {
+        width: 60%;
+    }
+
+    .home-title {
+        font-size: 3.2rem;
+    }
+
+    .home-subtitle {
+        font-size: 1.8rem;
+    }
+
+    /* Estrenos */
+    .title {
+        font-size: 2.5rem;
+        color: #fff;
+    }
+
+
+}
