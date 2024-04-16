@@ -131,6 +131,27 @@ body {
     color: #fff;
 }
 
+/* Footer */
+footer a {
+    color: #9E9E9E;
+    font-size: .9rem;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer img {
+    background-color: #9E9E9E;
+    padding: 2.8px;
+    border-radius: 25px;
+    width: 2rem;
+}
+
+footer img:hover {
+    background-color: #fff;
+}
+
 /* For desktop: */
 @media only screen and (min-width: 768px) {
 
@@ -158,5 +179,13 @@ body {
         color: #fff;
     }
 
+    /* Footer */
+    footer a{
+        font-size: 1rem;
+    }
+    footer img {
+        padding: 5px;
+        width: 3rem;
+    }
 
 }
