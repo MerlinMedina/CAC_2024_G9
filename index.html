@@ -32,22 +32,20 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <nav class="navbar navbar-expand-sm bg-body-tertiary fixed-top nav-left">
             <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <a class="navbar-brand" href="#">
                     <img src="imagenes/logo.svg" alt="Logo" width="36" height="30"
                         class="d-inline-block align-text-top">
-                    Grupo 9
+                    <span class="nav-title">Grupo 9</span>
                 </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-
                         <li class="nav-item">
                             <a class="nav-link" href="#estrenos">Estrenos</a>
                         </li>
@@ -67,23 +65,56 @@
                         </li>
 
                     </ul>
-
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <div class="fs-5 me-2 ">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                class="bi bi-bookmark-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2">
-                                </path>
-                            </svg>
-                            </svg>
-                        </div>
-                        <button class="btn btn-outline-success" type="submit">Iniciar Sesión</button>
-                    </form>
                 </div>
+                <form class="d-flex nav-desktop" role="search">
+                    <div class="fs-5 me-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search nav-icon"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="fs-5 me-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark-fill nav-icon"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2">
+                            </path>
+                        </svg>
+                        </svg>
+                    </div>
+                    <button class="btn btn-outline-success" type="submit">Iniciar Sesión</button>
+                </form>
+
             </div>
+            <form class="d-flex nav-mobile" role="search">
+                <div class="fs-5 me-2 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search nav-icon"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
+                        </path>
+                    </svg>
+                </div>
+                <div class="fs-5 me-2 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark-fill nav-icon"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2">
+                        </path>
+                    </svg>
+                    </svg>
+                </div>
+                <div class="fs-5 me-2 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-fill nav-icon"
+                        viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                    </svg>
+                </div>
+            </form>
         </nav>
+
 
     </header>
     <main>
@@ -98,18 +129,18 @@
         </section>
 
         <section id="estrenos" class="d-flex justify-content-center align-items-center pt-4 pb-4">
-            <div class="">
+            <div class="container-estrenos">
                 <h1 class="title mb-4">Estrenos</h1>
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="imagenes/pelicula1.jpeg" class="d-block w-100" alt="...">
+                            <img src="imagenes/pelicula1.jpeg" class="d-block w-100" alt="imagen de pelicula avatar">
                         </div>
                         <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
+                            <img src="imagenes/games.png" class="d-block w-100" alt="imagen de pelicula humger games">
                         </div>
                         <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
+                            <img src="imagenes/cruella.jpg" class="d-block w-100" alt="imagen de pelicula cruella">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -124,6 +155,7 @@
                     </button>
 
                 </div>
+
             </div>
 
         </section>
@@ -159,7 +191,8 @@
             </ul>
 
             <div class="col-md-4 d-flex">
-                <a class="mb-3 me-3 mb-md-0 text-decoration-none lh-1" href="terminos_y_privacidad.html">Términos y Privacidad</a>
+                <a class="mb-3 me-3 mb-md-0 text-decoration-none lh-1" href="terminos_y_privacidad.html">Términos y
+                    Privacidad</a>
                 <a class="mb-3 me-2 mb-md-0 text-decoration-none lh-1" href="ayuda.html">Ayuda</a>
             </div>
 

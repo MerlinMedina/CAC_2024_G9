@@ -1,0 +1,40 @@
+.container-estrenos{
+    width: 100%;
+}
+
+.carousel-inner img {
+    height: 200px;
+    cursor:pointer;
+}
+
+
+/* For Tablets: */
+@media  (min-width: 768px) {
+    .container-estrenos{
+        width: 600px;
+    }
+
+    .carousel-inner img {
+        height: 400px;
+    }
+    
+
+}
+
+/* For Desktop: */
+@media  (min-width: 1024px) {
+    .container-estrenos{
+        width: 800px;
+    }
+
+    .carousel-inner img {
+        height: 500px;
+    }
+}
+
+@media  (max-width: 768px) and (orientation:landscape){
+    .carousel-inner img {
+        height: 370px;
+      }
+}
+
