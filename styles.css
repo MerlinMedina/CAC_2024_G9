@@ -132,9 +132,25 @@ body {
 }
 
 /* Footer */
+@media (max-width: 400px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer div{
+        margin-top: .4rem;
+    }
+}
+
+footer div{
+    white-space: nowrap;
+}
+
 footer a {
     color: #9E9E9E;
     font-size: .9rem;
+    font-family: "Alata", sans-serif;
 }
 
 footer a:hover {
@@ -180,9 +196,10 @@ footer img:hover {
     }
 
     /* Footer */
-    footer a{
+    footer a {
         font-size: 1rem;
     }
+
     footer img {
         padding: 5px;
         width: 3rem;
