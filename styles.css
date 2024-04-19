@@ -1,6 +1,7 @@
 @import url("styles/menu.css");
 @import url("styles/home.css");
 @import url("styles/estrenos.css");
+@import url("styles/peliculas.css");
 @import url("styles/footer.css");
 
 :root {
@@ -8,7 +9,7 @@
     --col-de-link: #000;
     --col-de-btn: #830d3a;
     --col-de-btn-hover: #9c2a43c7;
-    --col-de-fondo: #000;
+    --col-de-fondo: #111111;
 }
 
 body {
