@@ -1,29 +1,31 @@
-.container-estrenos{
+.container-estrenos {
     width: 100%;
 }
 
 .carousel-inner img {
-    height: 200px;
-    cursor:pointer;
+    height: 270px;
+    cursor: pointer;
 }
 
 
+
+
 /* For Tablets: */
-@media  (min-width: 768px) {
-    .container-estrenos{
+@media (min-width: 768px) {
+    .container-estrenos {
         width: 600px;
     }
 
     .carousel-inner img {
         height: 400px;
     }
-    
+
 
 }
 
 /* For Desktop: */
-@media  (min-width: 1024px) {
-    .container-estrenos{
+@media (min-width: 1024px) {
+    .container-estrenos {
         width: 800px;
     }
 
@@ -32,9 +34,8 @@
     }
 }
 
-@media  (max-width: 768px) and (orientation:landscape){
+@media (max-width: 768px) and (orientation:landscape) {
     .carousel-inner img {
         height: 370px;
-      }
+    }
 }
-

@@ -1,5 +1,6 @@
 @import url("styles/menu.css");
 @import url("styles/home.css");
+@import url("styles/busqueda.css");
 @import url("styles/estrenos.css");
 @import url("styles/peliculas.css");
 @import url("styles/footer.css");
@@ -14,11 +15,6 @@
 
 body {
     background-color: var(--col-de-fondo);
-}
-
-
-.bg-body-tertiary {
-    background-color: var(--col-de-nav) !important;
 }
 
 /* Botones */
@@ -45,9 +41,14 @@ body {
     margin-left: 20px
 }
 
+/*Modal*/
+.modal-footer {
+    border-top: none;
+}
+
 /* For Tablets:*/
 @media only screen and (min-width: 768px) {
-    .title{
+    .title {
         font-size: 3rem;
     }
 }
