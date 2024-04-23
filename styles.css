@@ -4,6 +4,7 @@
 @import url("styles/estrenos.css");
 @import url("styles/peliculas.css");
 @import url("styles/footer.css");
+@import url("styles/registrarse.css");
 
 :root {
     --col-de-nav: #d60000;

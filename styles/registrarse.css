@@ -1,0 +1,8 @@
+.terminos, a{
+    white-space: nowrap;
+    color: #9E9E9E;
+}
+
+.terminos a:hover {
+    color: #d9534f;
+  }
