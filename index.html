@@ -31,89 +31,106 @@
 </head>
 
 <body>
-    <header class="fixed-top" id="header">
-        <nav class="navbar-container" id="nav">
-            <div class="nav-logo">
-                <a class="navbar-brand" href="#">
-                    <img src="imagenes/logo.svg" alt="Logo" width="36" height="30" class="d-inline-block">
-                    <span class="nav-title align-self-center">Grupo 9</span>
+    <header>
+
+        <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#busqueda">
+                    <img src="imagenes/logo.svg" alt="Logo" width="36" height="30"
+                        class="d-inline-block align-text-top">
+                    <span class="nav-title">Grupo 9</span>
                 </a>
-            </div>
-
-            <ul class="navbar-nav m-auto mb-2 mb-lg-0 nav-container-link">
-                <li class="nav-item">
-                    <a class="nav-link" href="#estrenos">Estrenos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#recomendados">Recomendadas</a>
-                </li>
-                <li class="nav-item dropdown dropdown-center">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Categorias
-                    </a>
-                    <ul class="dropdown-menu dropdown-center">
-                        <li><a class="dropdown-item" href="#">Infantiles</a></li>
-                        <li><a class="dropdown-item" href="#">Series</a></li>
-                        <li><a class="dropdown-item" href="#peliculas">Peliculas</a></li>
-                    </ul>
-                </li>
-
-            </ul>
-
-
-            <div class="d-flex">
-                <div class="fs-5 me-2 ">
-                    <a href="#busqueda">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                            class="bi bi-search nav-icon btn-search" viewBox="0 0 16 16">
+                <!-- iconos para mostrar en mobile -->
+                <div class="d-flex nav-mobile">
+                    <div class="fs-5 me-2 ">
+                        <a href="#busqueda">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search nav-icon"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="fs-5 me-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark-fill nav-icon"
+                            viewBox="0 0 16 16">
                             <path
-                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
+                                d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2">
                             </path>
                         </svg>
-                    </a>
+                        </svg>
+                    </div>
+                    <div class="fs-5 me-2 ">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#login" id="icon-login">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                class="bi bi-person-fill nav-icon m-1" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="fs-5 me-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark-fill nav-icon"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2">
-                        </path>
-                    </svg>
-                    </svg>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#estrenos">Estrenos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#recomendados">Recomendadas</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categorias
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Infantiles</a></li>
+                                <li><a class="dropdown-item" href="#">Series</a></li>
+                                <li><a class="dropdown-item" href="#peliculas">Peliculas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-                <div class="fs-5 me-2 nav-login">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#login" id="icon-login">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+
+                <!-- iconos para mostrar en desktop -->
+                <div class="d-flex nav-desktop">
+                    <div class="fs-5 me-2 ">
+                        <a href="#busqueda">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                class="bi bi-search nav-icon btn-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="fs-5 me-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark-fill nav-icon"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2">
+                            </path>
+                        </svg>
+                        </svg>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button class="btn btn-outline-success nav-btn" id="btn-login" type="button" data-bs-toggle="modal"
+                        data-bs-target="#login"> <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             class="bi bi-person-fill nav-icon m-1" viewBox="0 0 16 16">
                             <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-                        </svg>
-                    </a>
+                        </svg>Iniciar Sesión</button>
 
                 </div>
-                <!-- Button trigger modal -->
-                <button class="btn btn-outline-success nav-btn" id="btn-login" type="button" data-bs-toggle="modal"
-                    data-bs-target="#login"> <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                        class="bi bi-person-fill nav-icon m-1" viewBox="0 0 16 16">
-                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-                    </svg>Iniciar Sesión</button>
 
             </div>
-            <a href="#nav" class="nav-hamburguer" id="nav_hamburguer">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list nav-icon nav-btn-list"
-                    viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-                </svg>
-            </a>
-            <a href="#" class="nav-close">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x nav-icon nav-btn-close"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
-                </svg>
-            </a>
-
         </nav>
         <!-- Modal -->
         <div class="modal fade" id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true">
@@ -149,7 +166,6 @@
             </div>
         </div>
     </header>
-
     <main>
         <section id="home" class="container-home d-flex flex-column justify-content-center align-items-center">
             <div class="container-home_text text-center">
@@ -491,7 +507,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="main.js"></script>
 </body>
 
 </html>

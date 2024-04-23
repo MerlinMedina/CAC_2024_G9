@@ -17,6 +17,10 @@ body {
     background-color: var(--col-de-fondo);
 }
 
+.bg-body-tertiary {
+    background-color: var(--col-de-nav) !important;
+}
+
 /* Botones */
 .btn-outline-success {
     background-color: var(--col-de-btn);
