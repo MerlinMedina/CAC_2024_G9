@@ -30,15 +30,28 @@
 
 </head>
 
-<body>
-
-    <h1 class="text-center text-white">AYUDA</h1>
+<body class="fondo">
     <main>
         <section>
 
+            <div class="container-xxl m-0">
+                <div class="row justify-content-between">
+                    <div class="col-sm-3 d-flex align-items-center">
+                        <a href="index.html">
+                            <img src="imagenes/logo.svg" alt="Logo" width="36" height="30">
+                            <span class="label">Grupo 9</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 pt-1">
+                        <h1 class=" text-center">Ayuda</h1>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+            </div>
+
             <div class="container py-3 pt-5 text-white">
                 <form class="needs-validation" novalidate>
-                    <div class="row justify-content-center ">
+                    <div class="row justify-content-center">
                         <div class="form-group col-sm-4 pb-4 pt-1">
                             <label for="firstName" class="form-label">Nombre:</label>
                             <input type="text" class="form-control" id="firstName" placeholder="Ingrese su nombre"
@@ -56,9 +69,6 @@
                             </div>
                         </div>
 
-
-
-
                         <div class="form-group col-sm-8 pb-4 pt-1">
                             <label for="email" class="form-label">Correo electrónico:</label>
                             <input type="email" class="form-control" id="email" placeholder="correo@electrónico.com">
@@ -67,22 +77,19 @@
                             </div>
                         </div>
 
-
-                        
-
-
                         <div class="form-group col-sm-8 pb-4 pt-1">
-                            <label for="ayuda">¿En que lo podemos ayudar?</label>
-                            <textarea class="form-control" id="ayuda" rows="6" placeholder="Respondemos a la brevedad..."></textarea>
+                            <label for="ayuda" class="form-label">¿En que lo podemos ayudar?</label>
+                            <textarea class="form-control" id="ayuda" rows="6"
+                                placeholder="Respondemos a la brevedad..."></textarea>
                             <div class="invalid-feedback">
                                 ¡Ingrese su correo electrónico!.
                             </div>
-                          </div>
+                        </div>
 
                         <div class="row p-0 align-items-center justify-content-center">
                             <div class="col-sm-3 p-0">
-                                <button class="w-100 btn btn-primary btn-lg btn-outline-success"
-                                    type="submit">Enviar consulta</button>
+                                <button class="w-100 btn btn-primary btn-lg btn-outline-success" type="submit">Enviar
+                                    consulta</button>
                             </div>
                         </div>
                     </div>
