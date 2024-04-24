@@ -4,7 +4,7 @@ a {
 
 .pelicula {
     min-height: 500px;
-    height: 100vh;
+    /* height: 100vh; */
     background-image: url("https://image.tmdb.org/t/p/w500//8QVDXDiOGHRcAD4oM6MXjE0osSj.jpg");
     background-size: cover;
     background-position: center;
@@ -72,10 +72,11 @@ a {
 
 /* comentarios */
 .comment{
-    display: flex !important;
+   /*  display: flex !important;
     flex-direction: column;
     justify-content: center;
-    gap:30px;
+    gap:30px; */
+    margin-top:20px;
 }
 
 .container-comment{
@@ -83,6 +84,7 @@ a {
     flex-direction: column;
     justify-content: center;
     gap:10px;
+    margin-top:20px;
 
 }
 
