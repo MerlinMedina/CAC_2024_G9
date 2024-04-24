@@ -1,0 +1,136 @@
+a {
+    cursor: pointer;
+}
+
+.pelicula {
+    min-height: 500px;
+    height: 100vh;
+    background-image: url("https://image.tmdb.org/t/p/w500//8QVDXDiOGHRcAD4oM6MXjE0osSj.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+
+}
+
+.container-pelicula {
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+
+    color: #fff;
+    box-shadow: inset 0 0 0 1935px rgba(47, 46, 46, 0.7);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.container-pelicula-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-tab {
+    border-bottom: 1px solid #818080;
+    
+}
+
+.container-pelicula .nav-pills .nav-link.active {
+    background-color: transparent;
+    border-bottom: 3px solid var(--col-de-nav);
+
+}
+
+.container-pelicula .nav-pills .nav-link {
+    border-radius: 0 !important;
+}
+
+.container-pelicula-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-trailer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.container-trailer iframe {
+    margin-top: 20px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+/* comentarios */
+.comment{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    gap:30px;
+}
+
+.container-comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+
+}
+
+.container-comment-avatar{
+    display: flex;
+    align-items: center;
+}
+
+.avatar-data h5{
+    margin-bottom: 0;
+    font-size: 1.1rem;
+}
+
+.avatar-data span{
+    font-size: .8rem;
+}
+
+
+.avatar{
+    background-color: #6e6e6e;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border:1px solid #f5f5f5;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.icon-avatar{
+    width: 25px;
+    color: #b1aeae;
+}
+
+/* For tablets : */
+@media only screen and (min-width: 800px) {
+    section {
+        height: calc(100vh - 150px);
+    }
+
+    .container-pelicula {
+        flex-direction: row;
+        align-items: center;
+        padding: 2rem 8rem;
+
+    }
+
+    .container-trailer iframe {
+        width: 500px;
+    }
+
+
+}

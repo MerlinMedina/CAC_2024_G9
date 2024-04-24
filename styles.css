@@ -3,8 +3,10 @@
 @import url("styles/busqueda.css");
 @import url("styles/estrenos.css");
 @import url("styles/peliculas.css");
+@import url("styles/login.css");
 @import url("styles/footer.css");
 @import url("styles/registrarse.css");
+@import url("styles/pelicula.css");
 
 :root {
     --col-de-nav: #d60000;
@@ -12,6 +14,8 @@
     --col-de-btn: #830d3a;
     --col-de-btn-hover: #9c2a43c7;
     --col-de-fondo: #111111;
+    --col-de-input:#FFAD6A;
+    --col-de-link:#a3484f;
 }
 
 body {
@@ -28,11 +32,13 @@ body {
     color: #fff;
     border: 1px solid var(--col-de-btn);
     white-space: nowrap;
+ 
 }
 
 .btn-outline-success:hover {
     background-color: var(--col-de-btn-hover) !important;
     border: 1px solid var(--col-de-btn-hover);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /* titulos secciones */
@@ -46,14 +52,28 @@ body {
     margin-left: 20px
 }
 
-/*Modal*/
-.modal-footer {
-    border-top: none;
+/* inputs */
+input:focus{
+    border:2px solid var(--col-de-input) !important;
+    box-shadow: none !important;
 }
+
+/* label */
+label{
+    font-size: 1rem;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+}
+
+
 
 /* For Tablets:*/
 @media only screen and (min-width: 768px) {
-    .title {
+    .title{
         font-size: 3rem;
+    }
+
+    label{
+        font-size: 1.1;
     }
 }
