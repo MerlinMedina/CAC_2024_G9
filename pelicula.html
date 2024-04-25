@@ -35,7 +35,7 @@
 
         <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#busqueda">
+                <a class="navbar-brand" href="index.html">
                     <img src="imagenes/logo.svg" alt="Logo" width="36" height="30"
                         class="d-inline-block align-text-top">
                     <span class="nav-title">Grupo 9</span>
@@ -43,7 +43,7 @@
                 <!-- iconos para mostrar en mobile -->
                 <div class="d-flex nav-mobile">
                     <div class="fs-5 me-2 ">
-                        <a href="#busqueda">
+                        <a href="index.html#busqueda">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search nav-icon"
                                 viewBox="0 0 16 16">
                                 <path
@@ -91,7 +91,6 @@
                                 Categorias
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Infantiles</a></li>
                                 <li><a class="dropdown-item" href="#">Series</a></li>
                                 <li><a class="dropdown-item" href="index.html#peliculas">Peliculas</a></li>
                             </ul>
@@ -102,7 +101,7 @@
                 <!-- iconos para mostrar en desktop -->
                 <div class="d-flex nav-desktop">
                     <div class="fs-5 me-2 ">
-                        <a href="#busqueda">
+                        <a href="index.html#busqueda">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                 class="bi bi-search nav-icon btn-search" viewBox="0 0 16 16">
                                 <path
@@ -165,156 +164,203 @@
         </div>
     </header>
     <main>
-        <section class="d-flex justify-content-center align-items-center mt-5 pelicula">
-            <div class="container-pelicula">
-                <div>
-                    <div class="container-pelicula-data">
-                        <div class="container-pelicula-title">
-                            <h1 class="">Alienoid</h1>
-                            <span class="card-icon icon-star">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
-                                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                </svg> 5 </span>
-                        </div>
-
-                        <span class="card-icon">2018 | Acción | <svg xmlns="http://www.w3.org/2000/svg" width="13"
-                                height="13" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+        <section class="d-flex justify-content-center align-items-center mt-5 movie">
+            <div class="container-movie">
+                <div class="container-movie-data">
+                    <div class="container-movie-title">
+                        <h1 class="noto-font-bold">Alienoid</h1>
+                        <span class="card-icon icon-star">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
                                 <path
-                                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
-                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
-                            </svg>113 min</span>
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg> 5 </span>
+                    </div>
 
+                    <div class="container-badges mb-2">
+                        <span class="badge rounded-pill text-badge-light">Acción</span>
+                        <span class="badge rounded-pill text-badge-light">Ciencia Ficción</span>
+                    </div>
+                   
+                    <span class="card-icon rubik-font-regular">2018 | <svg xmlns="http://www.w3.org/2000/svg" width="13"
+                            height="13" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                            <path
+                                d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                        </svg>113 min</span>                    
+
+                    <div class="container-trailer">
+
+                        <iframe src="https://www.youtube.com/embed/ng_b2_nulsc?si=kyB7SHe-xa4W85XX"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                     </div>
 
-                    <div>
-                        <ul class="nav nav-pills mb-3 container-tab" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-home" role="tab" aria-controls="pills-home"
-                                    aria-selected="true">Sinopsis</a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-profile" type="button" role="tab"
-                                    aria-controls="pills-profile" aria-selected="false">Comentarios</a>
-                            </li>
 
-                        </ul>
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                                aria-labelledby="pills-home-tab" tabindex="0">
-                                <p>Durante siglos, los extraterrestres han
+                </div>
+
+                <div class="container-multimedia">
+
+                    <figure class="figure">
+                        <img src="https://image.tmdb.org/t/p/w500//8QVDXDiOGHRcAD4oM6MXjE0osSj.jpg"
+                            class="img-fluid rounded " alt="Alienoid">
+                    </figure>
+
+                    <div class="container-trailer">
+
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/ng_b2_nulsc?si=kyB7SHe-xa4W85XX"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    </div>
+
+                </div>
+
+
+                <div class="container-movie-description">
+                    <ul class="nav nav-pills mb-3 container-tab rubik-font-regular" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" role="tab" aria-controls="pills-home"
+                                aria-selected="true">Sinopsis</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Comentarios</a>
+                        </li>
+
+                    </ul>
+                    <div class="tab-content rubik-font-regular" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab" tabindex="0">
+                            <div class="img-detail">
+                                <img src="https://image.tmdb.org/t/p/w500//8QVDXDiOGHRcAD4oM6MXjE0osSj.jpg" class="img-fluid rounded img-mobile" alt="Alienoid">
+                                <span class="p-2 "> Durante siglos, los extraterrestres han
                                     encerrado a sus prisioneros en cuerpos humanos, sin que los humanos fueran
                                     conscientes
                                     de
-                                    ello. A veces los prisioneros escapan de sus cuerpos, pero hay guardianes vigilando.
-                                </p>
+                                    ello. A veces los prisioneros escapan de sus cuerpos, pero hay guardianes vigilando.</span>
                                
-                            </div>
-                            <div class="tab-pane fade comment" id="pills-profile" role="tabpanel"
-                                aria-labelledby="pills-profile-tab" tabindex="0">
+                                </div>
+                        </div>
+                        <div class="tab-pane fade comment" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab" tabindex="0">
 
-                                <div class="container-comment">
+                            <form action="">
+                                <div class="form-group pt-1 container-comment-input"> 
+                                    <textarea class="form-control input-comment" id="comment" rows="1"
+                                        placeholder="Escribe un comentario..."></textarea>
+                                        <button type="submit" class="btn-comment btn-outline-success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                                          </svg></button>
+                                
+                                </div>
+                            </form>
 
-                                    <div class="container-comment-avatar">
-                                        <div class="fs-5 me-2 d-flex justify-content-center align-items-center avatar">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                                class="bi bi-person-fill icon-avatar" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-                                            </svg>
-                                        </div>
-                                        <div class="avatar-data">
-                                            <h5>user1</h5>
-                                            <span>9 abril 2024</span>
-                                        </div>
+                            <div class="container-comment">
 
+                                <div class="container-comment-avatar">
+                                    <div class="fs-5 me-2 d-flex justify-content-center align-items-center avatar">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                            class="bi bi-person-fill icon-avatar" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                        </svg>
                                     </div>
-                                    <div class="container-comment-text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At id ab odio vero
-                                        laudantium explicabo, officiis ullam sunt animi molestiae ad earum, maiores
-                                        sapiente aperiam! Aliquam, vero! Laborum, delectus ducimus.
-                                       
+                                    <div class="avatar-data">
+                                        <h5>user1</h5>
+                                        <span>9 abril 2024</span>
                                     </div>
 
                                 </div>
-
-                                <div class="container-comment">
-                                    
-                                    <div class="container-comment-avatar">
-                                        <div class="fs-5 me-2 d-flex justify-content-center align-items-center avatar">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                                class="bi bi-person-fill icon-avatar" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-                                            </svg>
-                                        </div>
-                                        <div class="avatar-data">
-                                            <h5>lu23</h5>
-                                            <span>1 abril 2024</span>
-                                        </div>
-
-                                    </div>
-                                    <div class="container-comment-text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At id ab odio vero
-                                        laudantium explicabo, officiis ullam sunt animi molestiae ad earum, maiores
-                                        sapiente aperiam! Aliquam, vero! Laborum, delectus ducimus.
-                                       
-                                    </div>
+                                <div class="container-comment-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At id ab odio vero
+                                    laudantium explicabo, officiis ullam sunt animi molestiae ad earum, maiores
+                                    sapiente aperiam! Aliquam, vero! Laborum, delectus ducimus.
 
                                 </div>
-
-                                <div class="container-comment">
-                                    
-                                    <div class="container-comment-avatar">
-                                        <div class="fs-5 me-2 d-flex justify-content-center align-items-center avatar">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                                class="bi bi-person-fill icon-avatar" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-                                            </svg>
-                                        </div>
-                                        <div class="avatar-data">
-                                            <h5>ale_56</h5>
-                                            <span>18 marzo 2024</span>
-                                        </div>
-
-                                    </div>
-                                    <div class="container-comment-text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At id ab odio vero
-                                        laudantium explicabo, officiis ullam sunt animi molestiae ad earum, maiores
-                                        sapiente aperiam! Aliquam, vero! Laborum, delectus ducimus.
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptates nobis
-                                        dolores repudiandae fugiat fuga rerum est deserunt cumque suscipit, molestiae
-                                        fugit vel aliquid iste, ab adipisci aperiam alias sit.
-                                    </div>
-
-                                </div>
-
 
                             </div>
+
+                            <div class="container-comment">
+
+                                <div class="container-comment-avatar">
+                                    <div class="fs-5 me-2 d-flex justify-content-center align-items-center avatar">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                            class="bi bi-person-fill icon-avatar" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                        </svg>
+                                    </div>
+                                    <div class="avatar-data">
+                                        <h5>lu23</h5>
+                                        <span>1 abril 2024</span>
+                                    </div>
+
+                                </div>
+                                <div class="container-comment-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At id ab odio vero
+                                    laudantium explicabo, officiis ullam sunt animi molestiae ad earum, maiores
+                                    sapiente aperiam! Aliquam, vero! Laborum, delectus ducimus.
+
+                                </div>
+
+                            </div>
+
+                            <div class="container-comment">
+
+                                <div class="container-comment-avatar">
+                                    <div class="fs-5 me-2 d-flex justify-content-center align-items-center avatar">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                            class="bi bi-person-fill icon-avatar" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                        </svg>
+                                    </div>
+                                    <div class="avatar-data">
+                                        <h5>ale_56</h5>
+                                        <span>18 marzo 2024</span>
+                                    </div>
+
+                                </div>
+                                <div class="container-comment-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At id ab odio vero
+                                    laudantium explicabo, officiis ullam sunt animi molestiae ad earum, maiores
+                                    sapiente aperiam! Aliquam, vero! Laborum, delectus ducimus.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptates nobis
+                                    dolores repudiandae fugiat fuga rerum est deserunt cumque suscipit, molestiae
+                                    fugit vel aliquid iste, ab adipisci aperiam alias sit.
+                                </div>
+
+                            </div>
+
 
                         </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- 
+            <div class="container-movie">
+                
+                <div>
+
+                   
                     </div>
                     
                 </div>
 
 
-                <div class="container-trailer">
-                    <h1>Trailer</h1>
-
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ng_b2_nulsc?si=kyB7SHe-xa4W85XX"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-                </div>
-
-            </div>
+                
+            </div> -->
 
         </section>
 
