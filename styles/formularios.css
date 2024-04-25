@@ -18,3 +18,9 @@ a {
 
     color: white;
 }
+
+.home{
+    color: #fff;
+    /* font-family: "Alata", sans-serif; */
+    font-size: 1.25rem;
+}
