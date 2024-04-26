@@ -1,3 +1,8 @@
+.modal-content{
+    background: linear-gradient(to bottom right, #7c1010,#410e0e, #690f0f);
+    color:#fff;
+}
+
 .modal-footer {
     border-top: none;
 }
@@ -8,7 +13,7 @@
 }
 
 .modal-title {
-    color:rgb(77, 72, 72);
+    color:#f5f5f5;
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
     font-size:1.7rem;

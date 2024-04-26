@@ -36,7 +36,7 @@ a {
 
 .movie {
     min-height: 500px;
-    background: linear-gradient(to right, #222, rgb(96, 92, 92), #000);
+    background: linear-gradient(to bottom right, #1F1F1F, rgb(92, 91, 91), #000);
     text-align: left;
     padding: 50px 0;
     color: #f5f5f5;
@@ -172,6 +172,10 @@ a {
     position: relative;
 }
 
+.input-comment{
+    padding-right: 50px !important;
+}
+
 .btn-comment {
     position: absolute;
     display: block;
@@ -181,10 +185,14 @@ a {
     width: 30px;
     height: 30px;
     border-radius: 50px;
-    color: #000;
+   
 
     user-select: none;
     cursor: pointer;
+}
+
+.container-comment-input .btn-outline-success:hover{
+    background: var(--col-de-icon-hover) !important;
 }
 
 .container-comment {

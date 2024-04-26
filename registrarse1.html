@@ -30,20 +30,27 @@
 
 </head>
 
-<body>
+<body class="fondo">
     <main>
-        <section class="fondo">
-            <div class="container-logo mt-3">
-                <a href="index.html" >
-                    <img src="imagenes/logo.svg" alt="Logo">
-                    <span class="home noto-font-bold">Grupo 9</span>
-                </a>
+        <section>
+            <div class="container-xxl m-0">
+                <div class="row justify-content-between">
+                    <div class="col-sm-3 pt-2">
+                        <a href="index.html">
+                            <img src="imagenes/logo.svg" alt="Logo" width="36" height="30">
+                            <span class="home">Grupo 9</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-auto pt-2">
+                        <h1 class="title text-center">Crear cuenta</h1>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
             </div>
 
-            <div class="content-form ps-2 pe-2 mt-3">
-                <h1 class="text-center noto-font-bold">Crear cuenta</h1>
-                 <!--Formulario -->
-            <div class="container">
+
+            <!--Formulario -->
+            <div class="container py-3 pt-5">
                 <form class="needs-validation" novalidate>
                     <div class="row justify-content-center">
                         <div class="form-group col-sm-4 pb-4 pt-1">
@@ -83,7 +90,7 @@
                         <div class="row p-0 align-items-center justify-content-center">
                             <div class="col-sm-4 pb-4 pt-1">
                                 <label for="pais" class="form-label">País:</label>
-                                <select class="custom-select d-block w-100 form-control" id="pais" required>
+                                <select class="custom-select d-block w-100" id="pais" required>
                                     <option value="">Seleccione su pais...</option>
                                     <option value="AF">Afganistán</option>
                                     <option value="AL">Albania</option>
@@ -129,18 +136,13 @@
                                     rel="noopener noreferrer"><u>Términos y Privacidad</u></a></label>
                         </div>
 
-                        <div class="col-sm-3 p-3">
+                        <div class="col-sm-3 p-0">
                             <button class="w-100 btn btn-primary btn-lg btn-outline-success"
                                 type="submit">Registrarse</button>
                         </div>
                     </div>
                 </form>
             </div>
-
-            </div>
-            
-
-           
         </section>
 
     </main>
