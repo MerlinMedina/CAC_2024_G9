@@ -9,6 +9,7 @@
 @import url("styles/pelicula.css");
 @import url("styles/recomendadas.css");
 @import url("styles/favoritos.css");
+@import url("styles/serie.css");
 
 :root {
     --col-de-nav: #d60000;
